@@ -7,8 +7,6 @@ isanteplus is set to work on a linux enviroment
 # Install github 
 apt-get install git-all 
 
-#you will need to clone this repository
-
 git clone https://github.com/IsantePlus/isanteplus_installation.git
 
 cd isanteplus_installation
@@ -27,12 +25,10 @@ sudo /etc/init.d/mysql.server status
 
 sudo update-rc.d -f mysql.server defaults
 
-reboot the system 
-
 sudo reboot
 
 # install openmrs war and isante plus modules
 sh isanteplus-2.sh 
 
-# Navigate to http://localhost:8080/openmrs to continue the installation
+Navigate to http://localhost:8080/openmrs to continue the installation
 
