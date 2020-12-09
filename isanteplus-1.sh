@@ -1,13 +1,10 @@
 #!/bin/bash
 sudo sh
-#Run apt-get update
 sudo apt-get update
 
-#Install openjdk-8 (java 8 development kit) by PPA
 echo "Installing OpenJDK8"
 sudo apt-get install -y openjdk-8-jdk
 
-#Install tomcat7
 echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe" >> /etc/apt/sources.list
 
 sudo apt-get update
@@ -17,9 +14,8 @@ sudo service tomcat7 stop
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' | sudo tee --append /etc/default/tomcat7
 echo 'CATALINA_OPTS="-Xms512m -Xmx1024m"' | sudo tee --append /usr/share/tomcat7/bin/setenv.sh
 
-#Install MySQL Server (You will be prompted for a root password during this step, which is required for )
 echo "Installing MySQL Server. You will be prompted for a password."
-#sudo apt-get install -y mysql-server-5.6
+
 sudo rm /var/lib/mysql/ -R
 sudo rm /etc/mysql/ -R
 sudo apt-get autoremove mysql* --purge
