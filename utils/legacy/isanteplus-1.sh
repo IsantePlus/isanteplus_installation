@@ -17,6 +17,7 @@ echo "Installing MySQL Server. You will be prompted for a password."
 
 rm /var/lib/mysql/ -R
 rm /etc/mysql/ -R
+rm /usr/local/mysql/ -R
 apt-get autoremove mysql* --purge
 apt-get remove apparmor
 wget https://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.48-linux-glibc2.12-x86_64.tar.gz
