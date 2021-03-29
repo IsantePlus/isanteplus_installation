@@ -8,6 +8,11 @@
 apt-get install git-all
 git clone https://github.com/IsantePlus/isanteplus_installation.git
 cd isanteplus_installation
+
+sudo chmod 777 utils/legacy/isanteplus-1.sh
+sudo chmod 777 utils/legacy/isanteplus-2.sh
+sudo chmod 777 utils/legacy/isanteplus-3.sh
+
 ```
 
 ## Option 1: Legacy Approach
@@ -32,10 +37,14 @@ sudo update-rc.d -f mysql.server defaults
 sudo reboot
 ```
 
-### Step 2: Install openmrs war and isanteplus modules
+### Step 2: Install openmrs war 
 `sh utils/legacy/isanteplus-2.sh`
 
 Navigate to http://localhost:8080/openmrs to continue the installation
+
+
+### Step 3: Install openmrs concept and isanteplus modules
+`sh utils/legacy/isanteplus-3.sh`
 
 ## Option 2: Github Repo Distro Approach
 
