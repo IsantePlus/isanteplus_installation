@@ -84,8 +84,9 @@ Navigate to http://localhost:8080/openmrs to continue the installation
 
 2. Install docker-compose on the system. See https://docs.docker.com/compose/install/
 
-3. Pull images
+3. Boot up images:
     ```
+    docker-compose up -d
     ```
 
 ###  MySQL Docker Image
