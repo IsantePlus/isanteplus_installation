@@ -77,3 +77,19 @@ Navigate to http://localhost:8080/openmrs to continue the installation
    ```
 
 6. Navigate to http://localhost:8080/openmrs to continue the installation.
+
+## Option 3: Docker-based Setup
+
+1. Install docker server on the system. See https://docs.docker.com/engine/install/ for installation steps.
+
+2. Install docker-compose on the system. See https://docs.docker.com/compose/install/
+
+3. Pull images
+    ```
+    ```
+
+###  MySQL Docker Image
+Note: in order to make sure we prevent perfomance issues involved with running MySQL through docker, the docker-based MySQL setup needs to be set up correctly. See https://mysqlserverteam.com/mysql-with-docker-performance-characteristics/ and other posts discussing dockerized vs. native MySQL perfomance. It seems like perfomance should not be negatively 
+
+
+If the iSantePlus database is running on a dedicated server, or you
