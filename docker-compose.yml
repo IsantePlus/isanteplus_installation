@@ -14,7 +14,7 @@ services:
         OMRS_JAVA_MEMORY_OPTS: -Xmx2048m -Xms1024m -XX:NewSize=128m
         OMRS_CONFIG_CONNECTION_SERVER: isanteplus-mysql
         OMRS_CONFIG_CREATE_DATABASE_USER: 'false'
-        OMRS_CONFIG_CREATE_TABLES: 'true'
+        OMRS_CONFIG_CREATE_TABLES: 'false'
         OMRS_CONFIG_ADD_DEMO_DATA: 'false'
         OMRS_CONFIG_CONNECTION_URL: jdbc:mysql://isanteplus-mysql:3306/openmrs?autoReconnect=true
         OMRS_CONFIG_HAS_CURRENT_OPENMRS_DATABASE: 'true'
