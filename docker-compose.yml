@@ -43,6 +43,7 @@ services:
       volumes:
         - ./resources/mysql.cnf:/etc/mysql/conf.d/custom.cnf  # mysql config preconfigured to allow binlog/debezium
         - mysql-data:/var/lib/mysql
+        - ./volumes/dbdump:/docker-entrypoint-initdb.d 
 
 volumes:
   openmrs-data:
