@@ -10,3 +10,4 @@ service tomcat7 stop
 cp modules/*.omod /usr/share/tomcat7/.OpenMRS/modules/
 
 service tomcat7 start
+
